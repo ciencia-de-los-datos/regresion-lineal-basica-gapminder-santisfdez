@@ -5,7 +5,7 @@ Calificación del laboratorio
 
 import sys
 
-import soluciones
+import preguntas
 
 # import preguntas
 preguntas = soluciones
@@ -22,7 +22,7 @@ def test_01():
     (139, 1)
     (139, 1)
     """
-    soluciones.pregunta_01()
+    preguntas.pregunta_01()
 
 
 def test_02():
