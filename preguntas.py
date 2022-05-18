@@ -15,29 +15,35 @@ def pregunta_01():
     Complete el código presentado a continuación.
     """
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = ____
+    df = pd.read_csv('gm_2008_region.csv')
 
     # Asigne la columna "life" a `y` y la columna "fertility" a `X`
-    y = ____[____].____
-    X = ____[____].____
+    #y = ____[____].____
+    #X = ____[____].____
+
+    y=df["life"].values
+    x=df["fertility"].values
+
 
     # Imprima las dimensiones de `y`
-    print(____.____)
+    print(y.size)
 
     # Imprima las dimensiones de `X`
-    print(____.____)
+    print(x.size)
 
     # Transforme `y` a un array de numpy usando reshape
-    y_reshaped = y.reshape(____, ____)
+    #y_reshaped = y.reshape(____, ____)
+    y_reshaped = y.reshape(-1,1)
 
     # Trasforme `X` a un array de numpy usando reshape
-    X_reshaped = X.reshape(____, ____)
-
+    #X_reshaped = X.reshape(____, ____)
+    X_reshaped = X.reshape(-1,1)
+    
     # Imprima las nuevas dimensiones de `y`
-    print(____.____)
+    print(y.size)
 
     # Imprima las nuevas dimensiones de `X`
-    print(____.____)
+    print(x.size)
 
 
 def pregunta_02():
